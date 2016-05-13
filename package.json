@@ -1,0 +1,15 @@
+{
+  "name": "test-space",
+  "version": "1.0.0",
+  "description": "for single test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angularjs": "0.0.1",
+    "jquery": "^2.2.3"
+  }
+}

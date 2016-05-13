@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计数器</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            line-height: 100px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="clickMe">
+    click me
+</div>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#clickMe").on("click", (function(){
+            var time = 0;
+            return function(){
+//                console.log(111);
+                time++;
+                console.log(time);
+            }
+        }()));
+    })
+</script>
+</body>
+</html>
